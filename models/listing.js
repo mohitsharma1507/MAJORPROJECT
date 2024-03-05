@@ -35,7 +35,7 @@ const listingSchema = new Schema({
     geometry : {
         type: {
           type: String,
-          enum: ["Point"], 
+          enum: ['Point'], 
           required: true
         },
         coordinates: {
