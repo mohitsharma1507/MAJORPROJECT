@@ -35,7 +35,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 
-const dbUrl = process.env.ATLAS_URL; //"mongodb://127.0.0.1:27017/wanderlust";process.env.ATLAS_URL;
+const dbUrl = process.env.ATLAS_URL;
+
+
+//"mongodb://127.0.0.1:27017/wanderlust";process.env.ATLAS_URL;
 
 main().then((res) => {
     console.log("successfull");
